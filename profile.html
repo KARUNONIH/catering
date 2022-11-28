@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://unpkg.com/flowbite@1.5.4/dist/flowbite.min.css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script type="text/javascript" src="https://jeremyfagis.github.io/dropify/dist/js/dropify.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="https://jeremyfagis.github.io/dropify/dist/css/dropify.min.css">
+
+</head>
+
+<body class="bg-[#d9d9d9]">
+    <header class="bg-emerald-700 left-0 w-full max-h-20 flex items-center z-10">
+        <div class="container">
+            <div class="flex items-center justify-between relative">
+                <div class="px-11">
+                    <a href="#home">
+                        <img src="image/namalogo.png" alt="" srcset="" style="transform: scale(0.15)">
+                    </a>
+                </div>
+                <nav class="block static max-w-full">
+                    <ul class="flex">
+
+                        <li>
+                            <a href="" class="py-2 mx-6 text-lg font-bold text-white">Home</a>
+                        </li>
+                        <li>
+                            <a href="" class="py-2 mx-6 text-lg font-bold text-white">Menu</a>
+                        </li>
+                        <li>
+                            <a href="" class="py-2 mx-6 text-lg font-bold text-white">Langganan</a>
+                        </li>
+                        <li>
+                            <a href="" class="py-2 mx-6 text-lg font-bold text-white">Pesanan</a>
+                        </li>
+                        <li>
+                            <a href="" class=" py-2 mx-6 text-lg font-bold text-white dark:text-white">Dashboard</a>
+                        </li>
+                        <li>
+                            <a href="" class="ml-4 mx-6 text-lg font-bold text-white dark:text-white">Register</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <div class="flex mx-auto w-4/5 border-b-2 border-black mt-10">
+        <p class="text-4xl font-bold">Profil Saya</p>
+    </div>
+    <div class="w-4/5 mx-auto">
+        <div class="flex  gap-8 mt-8 ml-[55px]   ">
+            <div class="w-[123px] h-[123px] bg-[url('image/g4.png')] bg-cover rounded-xl" id="preview">
+            </div>
+            <div class="mt-8 flex gap-8">
+            <div class="w-[190px]">
+                <input name="file1" id="profile" type="file" class="dropify " data-height="20" data-allowed-file-extensions="jpg png jpeg" data-show-remove="false" />
+                <label for="profile" class="text-[16px]">Format File jpg, jpeg, png.</label>
+            </div>
+            <p class="text-blue-700 text-2xl underline cursor-pointer" id="profileubah">ubah</p>
+        </div>
+        </div>
+        <div class="block mt-10">
+        <div class="ml-[55px] block">
+            <table class="w-[1000px]">
+                <tr class="h-[75px]">
+                <td class="w-[25%] font-semibold text-[22px]">USERNAME</td>
+                <td class="w-[55%]"><input type="text" name="" id="username" value="" class="h-[50px] w-[475px] rounded-[15px] text-2xl" ></td>
+                <td class="text-blue-700 text-2xl underline text-left cursor-pointer w-[20%]" id="ubahusername">ubah</td>
+            </tr>
+            <tr class="h-[75px]">
+                <td class="w-[25%] font-semibold text-[22px]">EMAIL</td>
+                <td class="w-[55%]"><input type="email" name="" id="email" value="" class="h-[50px] w-[475px] rounded-[15px] text-2xl"></td>
+                <td class="text-blue-700 text-2xl underline text-left cursor-pointer" id="ubahemail">ubah</td>
+            </tr>
+            <tr class="h-[75px]">
+                <td class="w-[25%] font-semibold text-[22px]">KATA SANDI</td>
+                <td class="w-[55%]"><input type="password" name="" id="password" value="" class="h-[50px] w-[475px] rounded-[15px] text-2xl"></td>
+                <td class="text-blue-700 text-2xl underline text-left cursor-pointer" id="ubahpassword">ubah</td>
+            </tr>
+            <tr class="h-[75px]">
+                <td class="w-[25%] font-semibold text-[22px]">NOMOR TELEPON</td>
+                <td class="w-[55%]"><input type="text" name="" id="nomor" value="" class="h-[50px] w-[475px] rounded-[15px] text-2xl"></td>
+                <td class="text-blue-700 text-2xl underline text-left cursor-pointer" id="ubahnomor">ubah</td>
+            </tr>
+            <tr class="h-[75px]">
+                <td class="w-[25%] font-semibold text-[22px]">ALAMAT LENGKAP</td>
+                <td class="w-[55%]"><textarea name="" id="alamat" cols="30" rows="10" class="h-[80px] w-[475px] rounded-[15px] text-2xl p-1" ></textarea></td>
+                <td class="text-blue-700 text-2xl underline text-left cursor-pointer" id="ubahalamat">ubah</td>
+            </tr>
+        </table>
+        </div>
+        <div class="relative h-[120px] mt-9">
+            <button type="button" class="absolute right-0 focus:outline-none text-white bg-emerald-700 hover:bg-green-800 focus:ring-4 focus:ring-green-300 font-semibold rounded-full text-4xl px-12 py-2.5 mr-2 mb-2 dark:hover:bg-green-700 dark:focus:ring-green-800">Simpan</button>
+        </div>
+
+    </div>
+    </div>
+    <script src="js/index.js"></script>
+    <script src="https://unpkg.com/flowbite@1.5.4/dist/flowbite.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.1.min.js" integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
+</body>
+
+</html>
